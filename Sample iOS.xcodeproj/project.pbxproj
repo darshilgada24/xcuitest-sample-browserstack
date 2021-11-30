@@ -16,10 +16,31 @@
 		120BE9EF20149DCF00F85F1E /* NavLocalTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BE9EE20149DCF00F85F1E /* NavLocalTesting.swift */; };
 		129187F12018BE35000865ED /* TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129187F02018BE35000865ED /* TextEditor.swift */; };
 		129187F32018C846000865ED /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129187F22018C846000865ED /* GradientBackground.swift */; };
+		BCB26D632755156200C45670 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB26D622755156200C45670 /* ReplayKit.framework */; };
+		BCB26D662755156200C45670 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB26D652755156200C45670 /* SampleHandler.swift */; };
+		BCB26D6D2755156200C45670 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB26D622755156200C45670 /* ReplayKit.framework */; };
+		BCB26D6F2755156200C45670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB26D6E2755156200C45670 /* UIKit.framework */; };
+		BCB26D722755156200C45670 /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB26D712755156200C45670 /* BroadcastSetupViewController.swift */; };
+		BCB26D762755156200C45670 /* ScreenRecordSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCB26D6C2755156200C45670 /* ScreenRecordSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCB26D792755156200C45670 /* ScreenRecord.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCB26D602755156200C45670 /* ScreenRecord.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E6A69A5A2032F58A0047EEBF /* SampleXCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69A592032F58A0047EEBF /* SampleXCUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BCB26D742755156200C45670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 120BE9CF20145CEF00F85F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB26D6B2755156200C45670;
+			remoteInfo = ScreenRecordSetupUI;
+		};
+		BCB26D772755156200C45670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 120BE9CF20145CEF00F85F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB26D5F2755156200C45670;
+			remoteInfo = ScreenRecord;
+		};
 		E6A69A5C2032F58A0047EEBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 120BE9CF20145CEF00F85F1E /* Project object */;
@@ -28,6 +49,21 @@
 			remoteInfo = "Sample iOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCB26D7A2755156200C45670 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCB26D762755156200C45670 /* ScreenRecordSetupUI.appex in Embed App Extensions */,
+				BCB26D792755156200C45670 /* ScreenRecord.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		120BE9D720145CEF00F85F1E /* Sample iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +77,14 @@
 		120BE9EE20149DCF00F85F1E /* NavLocalTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLocalTesting.swift; sourceTree = "<group>"; };
 		129187F02018BE35000865ED /* TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditor.swift; sourceTree = "<group>"; };
 		129187F22018C846000865ED /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		BCB26D602755156200C45670 /* ScreenRecord.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenRecord.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB26D622755156200C45670 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		BCB26D652755156200C45670 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		BCB26D672755156200C45670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB26D6C2755156200C45670 /* ScreenRecordSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenRecordSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB26D6E2755156200C45670 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BCB26D712755156200C45670 /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		BCB26D732755156200C45670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6A69A572032F58A0047EEBF /* SampleXCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleXCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A69A592032F58A0047EEBF /* SampleXCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleXCUITests.swift; sourceTree = "<group>"; };
 		E6A69A5B2032F58A0047EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +95,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB26D5D2755156200C45670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB26D632755156200C45670 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB26D692755156200C45670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB26D6D2755156200C45670 /* ReplayKit.framework in Frameworks */,
+				BCB26D6F2755156200C45670 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +130,9 @@
 			children = (
 				120BE9D920145CEF00F85F1E /* Sample iOS */,
 				E6A69A582032F58A0047EEBF /* SampleXCUITests */,
+				BCB26D642755156200C45670 /* ScreenRecord */,
+				BCB26D702755156200C45670 /* ScreenRecordSetupUI */,
+				BCB26D612755156200C45670 /* Frameworks */,
 				120BE9D820145CEF00F85F1E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +142,8 @@
 			children = (
 				120BE9D720145CEF00F85F1E /* Sample iOS.app */,
 				E6A69A572032F58A0047EEBF /* SampleXCUITests.xctest */,
+				BCB26D602755156200C45670 /* ScreenRecord.appex */,
+				BCB26D6C2755156200C45670 /* ScreenRecordSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +165,33 @@
 			path = "Sample iOS";
 			sourceTree = "<group>";
 		};
+		BCB26D612755156200C45670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCB26D622755156200C45670 /* ReplayKit.framework */,
+				BCB26D6E2755156200C45670 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCB26D642755156200C45670 /* ScreenRecord */ = {
+			isa = PBXGroup;
+			children = (
+				BCB26D652755156200C45670 /* SampleHandler.swift */,
+				BCB26D672755156200C45670 /* Info.plist */,
+			);
+			path = ScreenRecord;
+			sourceTree = "<group>";
+		};
+		BCB26D702755156200C45670 /* ScreenRecordSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				BCB26D712755156200C45670 /* BroadcastSetupViewController.swift */,
+				BCB26D732755156200C45670 /* Info.plist */,
+			);
+			path = ScreenRecordSetupUI;
+			sourceTree = "<group>";
+		};
 		E6A69A582032F58A0047EEBF /* SampleXCUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +211,52 @@
 				120BE9D320145CEF00F85F1E /* Sources */,
 				120BE9D420145CEF00F85F1E /* Frameworks */,
 				120BE9D520145CEF00F85F1E /* Resources */,
+				BCB26D7A2755156200C45670 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCB26D752755156200C45670 /* PBXTargetDependency */,
+				BCB26D782755156200C45670 /* PBXTargetDependency */,
 			);
 			name = "Sample iOS";
 			productName = "Sample iOS";
 			productReference = 120BE9D720145CEF00F85F1E /* Sample iOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BCB26D5F2755156200C45670 /* ScreenRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB26D802755156200C45670 /* Build configuration list for PBXNativeTarget "ScreenRecord" */;
+			buildPhases = (
+				BCB26D5C2755156200C45670 /* Sources */,
+				BCB26D5D2755156200C45670 /* Frameworks */,
+				BCB26D5E2755156200C45670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecord;
+			productName = ScreenRecord;
+			productReference = BCB26D602755156200C45670 /* ScreenRecord.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BCB26D6B2755156200C45670 /* ScreenRecordSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB26D7F2755156200C45670 /* Build configuration list for PBXNativeTarget "ScreenRecordSetupUI" */;
+			buildPhases = (
+				BCB26D682755156200C45670 /* Sources */,
+				BCB26D692755156200C45670 /* Frameworks */,
+				BCB26D6A2755156200C45670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecordSetupUI;
+			productName = ScreenRecordSetupUI;
+			productReference = BCB26D6C2755156200C45670 /* ScreenRecordSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		E6A69A562032F58A0047EEBF /* SampleXCUITests */ = {
 			isa = PBXNativeTarget;
@@ -152,12 +282,20 @@
 		120BE9CF20145CEF00F85F1E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = BrowserStack;
 				TargetAttributes = {
 					120BE9D620145CEF00F85F1E = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BCB26D5F2755156200C45670 = {
+						CreatedOnToolsVersion = 11.4.1;
+						ProvisioningStyle = Automatic;
+					};
+					BCB26D6B2755156200C45670 = {
+						CreatedOnToolsVersion = 11.4.1;
 						ProvisioningStyle = Automatic;
 					};
 					E6A69A562032F58A0047EEBF = {
@@ -182,6 +320,8 @@
 			targets = (
 				120BE9D620145CEF00F85F1E /* Sample iOS */,
 				E6A69A562032F58A0047EEBF /* SampleXCUITests */,
+				BCB26D5F2755156200C45670 /* ScreenRecord */,
+				BCB26D6B2755156200C45670 /* ScreenRecordSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +334,20 @@
 				120BE9E720145CEF00F85F1E /* LaunchScreen.storyboard in Resources */,
 				120BE9E420145CEF00F85F1E /* Assets.xcassets in Resources */,
 				120BE9E220145CEF00F85F1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB26D5E2755156200C45670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB26D6A2755156200C45670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +374,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB26D5C2755156200C45670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB26D662755156200C45670 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB26D682755156200C45670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB26D722755156200C45670 /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6A69A532032F58A0047EEBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +401,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BCB26D752755156200C45670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB26D6B2755156200C45670 /* ScreenRecordSetupUI */;
+			targetProxy = BCB26D742755156200C45670 /* PBXContainerItemProxy */;
+		};
+		BCB26D782755156200C45670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB26D5F2755156200C45670 /* ScreenRecord */;
+			targetProxy = BCB26D772755156200C45670 /* PBXContainerItemProxy */;
+		};
 		E6A69A5D2032F58A0047EEBF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 120BE9D620145CEF00F85F1E /* Sample iOS */;
@@ -368,6 +548,7 @@
 		120BE9EC20145CEF00F85F1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XPT93F9Q7;
@@ -384,6 +565,7 @@
 		120BE9ED20145CEF00F85F1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8XPT93F9Q7;
@@ -393,6 +575,88 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.browserstack.Sample-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCB26D7B2755156200C45670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XPT93F9Q7;
+				INFOPLIST_FILE = ScreenRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.browserstack.Sample-iOS.ScreenRecord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCB26D7C2755156200C45670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XPT93F9Q7;
+				INFOPLIST_FILE = ScreenRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.browserstack.Sample-iOS.ScreenRecord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCB26D7D2755156200C45670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XPT93F9Q7;
+				INFOPLIST_FILE = ScreenRecordSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.browserstack.Sample-iOS.ScreenRecordSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCB26D7E2755156200C45670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XPT93F9Q7;
+				INFOPLIST_FILE = ScreenRecordSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.browserstack.Sample-iOS.ScreenRecordSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -444,6 +708,24 @@
 			buildConfigurations = (
 				120BE9EC20145CEF00F85F1E /* Debug */,
 				120BE9ED20145CEF00F85F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB26D7F2755156200C45670 /* Build configuration list for PBXNativeTarget "ScreenRecordSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB26D7D2755156200C45670 /* Debug */,
+				BCB26D7E2755156200C45670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB26D802755156200C45670 /* Build configuration list for PBXNativeTarget "ScreenRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB26D7B2755156200C45670 /* Debug */,
+				BCB26D7C2755156200C45670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
