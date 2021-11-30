@@ -7,14 +7,12 @@
 //
 
 import UIKit
-import ReplayKit
 
 @available(iOS 12.0, *)
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var ButtonTextInput: UIButton!
     @IBOutlet weak var ButtonNativeAlert: UIButton!
-    var broadcastPicker: RPSystemBroadcastPickerView?
 
     
     override func viewDidLoad() {
@@ -34,11 +32,6 @@ class FirstViewController: UIViewController {
 
         
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let kPickerFrame = CGRect(x: 10.0, y: 300, width: 100.0, height: 100.0)
-        broadcastPicker = RPSystemBroadcastPickerView(frame: kPickerFrame);
-        broadcastPicker?.preferredExtension = "com.browserstack.Sample-iOS.ScreenRecord";
-        view.addSubview(broadcastPicker!)
     }
 
     // Mark: Actions
